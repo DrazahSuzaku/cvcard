@@ -1,58 +1,45 @@
 ---
-// Component Imports
-import Tour from '../components/Tour.astro';
-// You can import components from any supported Framework here!
 
+import BaseLayout from '../layouts/BaseLayout.astro'
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+// page
+const title = 'Eric Hazard Vcard';
+const description = "Le site CV d'Eric Hazard, développeur web à Toulouse";
+const canonicalUrl = Astro.request.canonicalURL;
+const activeLink = "index";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
 
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
+<BaseLayout
+        title={title}
+        description={description}
+        canonicalUrl={canonicalUrl}
+        activeLink={activeLink}
+>
 
-    <style>
-        header {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            max-width: min(100%, 68ch);
-        }
-    </style>
-</head>
-<body>
-    <main>
-        <header>
-            <div>
-                <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-                <h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+    <section class="bg-gray-100 px-32 pt-20">
+        <h1 class="font-bold text-5xl mb-6">Eric HAZARD</h1>
+        <h2 class="block md:inline-block font-bold text-xl text-gray-500">Développeur Web sur Toulouse</h2>
+        <p class="block md:inline-block text-gray-500 text-lg">  (2 ans d'expérience)</p>
+
+        <div class="flex flex-row">
+            <div class="md:w-4/12 h-screen bg-gray-900">
+                
             </div>
-        </header>
+            <div class="md:w-8/12">
+                <p class="text-lg">
+                    Diplômé en Histoire (Master Recherche), je me suis reconverti dans le développement Web en 200X.  J'ai par la suite travaillé  2 ans comme développeur backend PHP dans une agence web  sur Toulouse. J'ai passé la difficile période des premiers confinements à me former sur les méthodes de travail,  outils et technologies pour m'améliorer à travers de véritables projets d'applications qui sont encore en cours de développement. Vous pourrez trouver plus d'information là dessus dans la partie
+                    <a href="/projetd">Projets</a>.
 
-        <Tour />
+                </p>
+            </div>
 
-        <!--
-           - You can also use imported framework components directly in your markup!
-           -
-           - Note: by default, these components are NOT interactive on the client.
-           - The `:visible` directive tells Astro to make it interactive.
-           -
-           - See https://docs.astro.build/core-concepts/component-hydration/ 
-           -->
+        </div>
 
-    </main>
-</body>
-</html>
+
+    </section>
+    <section>
+
+    </section>
+
+</BaseLayout>

@@ -1,0 +1,39 @@
+---
+
+import MainHeader from '../components/MainHeader.astro'
+import Sidebar from '../components/Sidebar.astro'
+
+export interface Props {
+title: string;
+description: string;
+canonicalUrl?: string;
+activeLink?: string;
+}
+
+const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
+
+---
+
+<html lang="fr">
+<head>
+    <MainHeader
+            title={title}
+            description={description}
+            canonicalUrl={canonicalUrl}
+    />
+</head>
+
+<body>
+<div class="flex flex-col md:flex-row">
+    <header class="w-screen md:w-1/6 md:h-screen bg-purple-800">
+        <Sidebar
+                activeLink={activeLink}
+        />
+    </header>
+
+    <main class="w-full md:w-5/6">
+        <slot/>
+    </main>
+</div>
+</body>
+</html>
