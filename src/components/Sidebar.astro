@@ -6,8 +6,10 @@ export interface Props {
 
 const { activeLink } = Astro.props as Props;
 
-const linkActiveClass = activeLink
-
+const linkClass = function(page: string): string {
+    const activeLinkClass = page === activeLink ? 'text-purple-200' : 'text-white';
+    return "text-2xl text-center font-bold " + activeLinkClass;
+}
 ---
 
 <nav class="flex flex-col items-center">
@@ -47,11 +49,11 @@ const linkActiveClass = activeLink
     </div>
 
     <ul class="flex flex-col gap-8">
-        <li class="text-white text-2xl text-center font-bold"><a href="/index">A propos de moi</a></li>
-        <li class="text-white text-2xl text-center font-bold"><a href="/projets">Mes projets</a></li>
-        <li class="text-white text-2xl text-center font-bold"><a href="/competences">Mes compétences</a></li>
-        <li class="text-white text-2xl text-center font-bold"><a href="/experiences">Mes expériences</a></li>
-        <li class="text-white text-2xl text-center font-bold"><a href="/cv">Mon CV</a></li>
-        <li class="text-white text-2xl text-center font-bold"><a href="/contact">Me contacter</a></li>
+        <li class={linkClass('index')}><a href="/">A propos de moi</a></li>
+        <li class={linkClass('projets')}><a href="/projets">Mes projets</a></li>
+        <li class={linkClass('competences')}><a href="/competences">Mes compétences</a></li>
+        <li class={linkClass('experiences')}><a href="/experiences">Mes expériences</a></li>
+        <li class={linkClass('cv')}><a href="/cv">Mon CV</a></li>
+        <li class={linkClass('contact')}><a href="/contact">Me contacter</a></li>
     </ul>
 </nav>
