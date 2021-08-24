@@ -1,3 +1,15 @@
+---
+
+export interface Props {
+    activeLink: string;
+}
+
+const { activeLink } = Astro.props as Props;
+
+const linkActiveClass = activeLink
+
+---
+
 <nav class="flex flex-col items-center">
     <div class="p-4">
         <p class="text-center text-white text-2xl font-bold">Eric Hazard</p>

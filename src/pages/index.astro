@@ -17,28 +17,49 @@ const activeLink = "index";
         activeLink={activeLink}
 >
 
-    <section class="bg-gray-100 px-32 pt-20">
-        <h1 class="font-bold text-5xl mb-6">Eric HAZARD</h1>
+    <section class="bg-gray-100 px-32 pt-8 pb-8">
+        <h1 class="font-bold text-5xl mb-2">Eric HAZARD</h1>
         <h2 class="block md:inline-block font-bold text-xl text-gray-500">Développeur Web sur Toulouse</h2>
         <p class="block md:inline-block text-gray-500 text-lg">  (2 ans d'expérience)</p>
 
-        <div class="flex flex-row">
-            <div class="md:w-4/12 h-screen bg-gray-900">
-                
+        <div class="flex flex-row mt-8">
+            <div class="md:w-4/12 bg-gray-900">
             </div>
             <div class="md:w-8/12">
-                <p class="text-lg">
-                    Diplômé en Histoire (Master Recherche), je me suis reconverti dans le développement Web en 200X.  J'ai par la suite travaillé  2 ans comme développeur backend PHP dans une agence web  sur Toulouse. J'ai passé la difficile période des premiers confinements à me former sur les méthodes de travail,  outils et technologies pour m'améliorer à travers de véritables projets d'applications qui sont encore en cours de développement. Vous pourrez trouver plus d'information là dessus dans la partie
-                    <a href="/projetd">Projets</a>.
-
-                </p>
+                <div class="mx-12">
+                    <p class="text-xl tracking-wide leading-relaxed">
+                        Diplômé en Histoire (Master Recherche), je me suis reconverti dans le développement Web en 200X. J'ai par la suite travaillé 2 ans comme développeur backend PHP dans une agence web sur Toulouse. J'ai profité de la difficile période des confinements pour me former sur les méthodes de travail, outils et technologies pour m'améliorer à travers de véritables projets d'applications qui sont encore en cours de développement. Vous pourrez trouver plus d'information à ce sujet dans la partie <a class="text-purple-600 underline " href="/projets">Projets</a>.
+                    </p>
+                    <br>
+                    <p class="text-xl tracking-wide leading-relaxed">
+                        Je cherche un travail de développeur web dans les écosystèmes PHP et JS. Lors de mes expériences professionnelles, j'ai travaillé avec Symfony et un framework propre à l'entreprise. Lorsque je travaille sur un projet, j'essaye toujours de comprendre le besoin utilisateur pour pouvoir choisir les outils techniques les plus pertinents. C'est la raison pour laquelle, je me suis activement formé à de multiples outils.
+                    </p>
+                </div>
             </div>
-
         </div>
 
-
     </section>
-    <section>
+    <section class="pt-8">
+        <p class="text-center font-bold text-2xl">Mes technologies favorites pour la réalisation d'applications ou de sites complexes  </p>
+        <div class="px-32 pt-10 pb-8">
+            <ol class="flex flex-col md:flex-row md:justify-between">
+                <li class="flex flex-col">
+                    <img class="w-42 h-42" src="/assets/react-logo.svg" alt="React">
+                    <p class="text-center">REACT</p>
+                </li>
+                <li class="flex flex-col">
+                    <img class="w-36 h-36 mb-2" src="/assets/symfony-logo.svg" alt="Symfony">
+                    <p class="text-center">SYMFONY</p>
+                </li>
+                <li class="flex flex-col">
+                    <img class="w-36 h-36 mb-2" src="/assets/laravel-logo.svg" alt="Laravel">
+                    <p class="text-center">LARAVEL</p>
+                </li>
+                <li>
+                    <img class="w-42 h-42" src="/assets/api-platform-logo.svg" alt="API Platform">
+                </li>
+            </ol>
+        </div>
 
     </section>
 

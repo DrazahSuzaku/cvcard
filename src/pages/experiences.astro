@@ -1,16 +1,22 @@
 ---
 
-import MainHeader from '../components/MainHeader.astro'
-import Sidebar from '../components/Sidebar.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+// page
+const title = 'Eric Hazard Mes expériences';
+const description = "Découvrez mes expériences professionnelles ou de projets personnels dans le développement Web. Eric Hazard - Toulouse";
+const canonicalUrl = Astro.request.canonicalURL;
+const activeLink = "experiences";
 
 ---
 
-<html lang="fr">
-<head>
-    <MainHeader/>
-</head>
+<BaseLayout
+        title={title}
+        description={description}
+        canonicalUrl={canonicalUrl}
+        activeLink={activeLink}
+>
 
-<body>
-<Sidebar/>
-</body>
-</html>
+
+
+</BaseLayout>
