@@ -1,16 +1,38 @@
 ---
 
-import MainHeader from '../components/MainHeader.astro'
-import Sidebar from '../components/Sidebar.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+// page
+const title = 'Eric Hazard Mes expériences';
+const description = "Découvrez mes expériences professionnelles ou de projets personnels dans le développement Web. Eric Hazard - Toulouse";
+const canonicalUrl = Astro.request.canonicalURL;
+const activeLink = "experiences";
 
 ---
 
-<html lang="fr">
-<head>
-    <MainHeader/>
-</head>
+<BaseLayout
+        title={title}
+        description={description}
+        canonicalUrl={canonicalUrl}
+        activeLink={activeLink}
+>
+    <div class="px-8 md:px-32">
+        <h1 class="pt-16 text-center text-2xl font-bold">Me contacter</h1>
 
-<body>
-<Sidebar/>
-</body>
-</html>
+        <div class="h-screen">
+            <p class="py-12 text-center">Vous pouvez me contacter à l'adresse mail qui suit.</p>
+
+            <section class="w-6/12 m-auto bg-gray-100 h-24 flex flex-col content-center justify-center">
+                <p class="text-center">eric.hazard31@gmail.com</p>
+            </section>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</BaseLayout>
