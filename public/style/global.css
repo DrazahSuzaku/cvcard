@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .text-darkblue-custom {
+        color: #222831;
+    }
+    .bg-darkblue-custom {
+        background-color: #222831;
+    }
+    .text-lightblue-custom {
+        color: #30475E;
+    }
+    .bg-lightblue-custom {
+        background-color: #30475E;
+    }
+    .bg-beige-custom {
+        background-color:#EEEBDD
+    }
+}

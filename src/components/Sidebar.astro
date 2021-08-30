@@ -7,7 +7,7 @@ export interface Props {
 const { activeLink } = Astro.props as Props;
 
 const linkClass = function(page: string): string {
-    const activeLinkClass = page === activeLink ? 'text-black' : 'text-white';
+    const activeLinkClass = page === activeLink ? 'text-darkblue-custom' : 'text-white';
     return "text-xl text-center font-bold hover:bg-white hover:rounded-lg hover:bg-opacity-25 p-4 " + activeLinkClass;
 }
 ---
