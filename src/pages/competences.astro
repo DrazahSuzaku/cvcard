@@ -6,7 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 const title = 'Eric Hazard Mes expériences';
 const description = "Découvrez mes expériences professionnelles ou de projets personnels dans le développement Web. Eric Hazard - Toulouse";
 const canonicalUrl = Astro.request.canonicalURL;
-const activeLink = "experiences";
+const activeLink = "competences";
 
 ---
 
@@ -24,46 +24,46 @@ const activeLink = "experiences";
         <section class="pt-8">
             <h2 class="bg-purple-800 rounded-full p-2 text-white text-center text-xl font-bold shadow-md border-white border-2">
                 Développement Web</h2>
-            <div class="mt-8 p-4">
+            <div class="mt-8 p-4 flex flex-col">
+                <div class="m-auto w-6/12">
                 <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias at autem culpa cum
                     distinctio dolore doloribus fugiat harum laboriosam laborum, libero, minus nostrum odit perspiciatis
                     praesentium rem reprehenderit saepe!</p>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias at autem culpa cum
-                    distinctio dolore doloribus fugiat harum laboriosam laborum, libero, minus nostrum odit perspiciatis
-                    praesentium rem reprehenderit saepe!</p>
+                </div>
+
             </div>
 
-            <div class="flex flex-row justify-center">
+            <div class="flex flex-col justify-center">
                 <article id="transversal" class="pt-4 px-8 w-full">
-                    <header class="rounded-full p-2 bg-gray-100">
-                        <h3 class="text-center font-bold">Transversal</h3>
+                    <header class="rounded-full p-2 bg-purple-400">
+                        <h3 class="text-center font-bold text-xl text-white">Transversal</h3>
                     </header>
 
                     <div class="grid grid-cols-3 gap-4 md:pt-8">
                         <article id="bdd">
                             <header>
-                                <h4 class="text-center font-bold p-2 text-purple-500">Base de données</h4>
+                                <h4 class="text-center text-lg font-bold p-2 text-purple-500">Base de données</h4>
                             </header>
-                            <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-between">
-                                <p>MySql</p>
-                                <p>PHPMyAdmin</p>
+                            <section class="p-8 bg-gray-100 flex flex-row justify-center gap-6">
+                                <p class="font-bold">MySql</p>
+                                <p class="font-bold">PHPMyAdmin</p>
                             </section>
                         </article>
                         <article id="javascript">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-purple-500">Javascript</h4>
-                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-between">
-                                    <p>Typescript</p>
-                                    <p>Jquery</p>
+                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-center gap-6">
+                                    <p class="font-bold">Typescript</p>
+                                    <p class="font-bold">Jquery</p>
                                 </section>
                             </header>
                         </article>
                         <article id="seo">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-purple-500">SEO</h4>
-                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-between">
-                                    <p>Google Analytics</p>
-                                    <p>RGPD</p>
+                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-center gap-6">
+                                    <p class="font-bold">Google Analytics</p>
+                                    <p class="font-bold">RGPD</p>
                                 </section>
                             </header>
                         </article>
@@ -71,25 +71,25 @@ const activeLink = "experiences";
                         <article id="concept">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-purple-500">Concept</h4>
-                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-between">
-                                    <p>POO</p>
-                                    <p>MVC</p>
-                                    <p>CRUD</p>
-                                    <p>API REST</p>                                                                  </section>
+                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-center gap-6">
+                                    <p class="font-bold">POO</p>
+                                    <p class="font-bold">MVC</p>
+                                    <p class="font-bold">CRUD</p>
+                                    <p class="font-bold">API REST</p>                                                                  </section>
                             </header>
                         </article>
                         <article id="php">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-purple-500">PHP</h4>
-                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-between">
+                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-center gap-6">
                                 </section>
                             </header>
                         </article>
                         <article id="librairies">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-purple-500">Librairies</h4>
-                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-between">
-                                    <p>Google Map</p>
+                                <section class="p-8 bg-gray-100 flex flex-row gap-2 justify-center gap-6">
+                                    <p class="font-bold">Google Map</p>
                                 </section>
                             </header>
                         </article>
@@ -97,9 +97,24 @@ const activeLink = "experiences";
 
                 </article>
 
-                <article id="site-statique">
+                <article id="site-statique" class="pt-4 px-8 w-full">
+                    <header class="rounded-full p-2 bg-purple-400">
+                        <h3 class="text-center font-bold text-xl text-white">Site statique</h3>
+                    </header>
+
+                    <div class=" md:pt-8 flex flex-row justify-center">
+                        <article id="astro">
+                            <header>
+                                <h4 class="text-center text-lg font-bold p-2 text-purple-500">Frameworks/Librairies</h4>
+                            </header>
+                            <section class="p-8 bg-gray-100 flex flex-row justify-center gap-6">
+                                <p class="font-bold">Astro</p>
+                            </section>
+                        </article>
+                    </div>
 
                 </article>
+
 
                 <article id="site-dynamique">
 

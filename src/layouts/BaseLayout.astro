@@ -25,7 +25,7 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
 
 <body>
 <div class="flex flex-col md:flex-row">
-    <header class="w-screen md:w-1/6 md:h-screen bg-purple-800  min-h-full">
+    <header class="w-screen md:w-1/6 bg-red-600 md:min-h-screen">
         <Sidebar
                 activeLink={activeLink}
         />
@@ -35,5 +35,30 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
         <slot/>
     </main>
 </div>
+
+<script>
+    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    const navbar = document.querySelector('#navbar');
+    const buttonMenu = document.querySelector("#buttonMenu");
+
+    //  START Page Index //
+    const indexSidePicture = document.querySelector('#sidePicture');
+    // END Page Index //
+    if(isMobile){
+        navbar.classList.add('hidden');
+        indexSidePicture.classList.add('hidden');
+    }
+
+    if(buttonMenu && navbar) {
+        buttonMenu.addEventListener('click', () => {
+            if(navbar.classList.contains('hidden')){
+                navbar.classList.remove('hidden');
+            } else {
+                navbar.classList.add('hidden');
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
