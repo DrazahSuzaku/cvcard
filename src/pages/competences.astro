@@ -17,8 +17,8 @@ const activeLink = "competences";
         activeLink={activeLink}
 >
     <div class="px-8 md:px-32">
-        <h1 class="pt-16 text-center text-4xl font-bold pb-8">Mes compétences et connaissances</h1>
-        <section class="bg-gray-100 p-4 items-center flex flex-col">
+        <h1 class="pt-10 text-center text-4xl font-bold pb-8">Mes compétences et connaissances</h1>
+        <section class="bg-gray-100 p-4 items-center flex flex-col shadow-sm">
             <p class="px-4 text-lg font-bold">Les technologies avec une
                 <svg class="inline-block mb-2" height="36" viewBox="0 0 60 60" width="36"
                      xmlns="http://www.w3.org/2000/svg">
@@ -48,20 +48,53 @@ const activeLink = "competences";
             </p>
         </section>
         <section class="items-center flex flex-col pt-8">
-            <article class="bg-gray-400 w-4/12 p-2 flex flex-col items-center">
-                <p class="text-center text-white font-bold text-xl">Table des matières</p>
-                <ol class="list-disc flex flex-col gap-2 pt-4">
+            <article class="bg-main-light w-full md:w-6/12 p-2 flex flex-col items-center shadow-md">
+                <div class="border-b-4 border-white w-full">
+                    <p class="text-center text-white font-bold text-xl ">Table des matières</p>
+
+                </div>
+
+                <ol class="flex flex-col gap-2 pt-4">
                     <li>
-                        <a class="underline text-red-100" href="#developpement-web">Développement Web</a>
-                        <ol class="list-disc pl-6 flex flex-col gap-2 pt-2">
-                            <li><a class="underline text-red-100" href="#cms">CMS</a></li>
-                            <li><a class="underline text-red-100" href="#site-statique">Site statique</a></li>
-                            <li><a class="underline text-red-100" href="#site-dynamique">Site dynamique</a></li>
+                        <svg class="fill-current text-white mr-2 inline-block w-6 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="-34 1 511 511.99899">
+                            <g id="surface1">
+                                <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                            </g>
+                        </svg>                        <a class="underline text-red-100" href="#developpement-web">Développement Web</a>
+                        <ol class="pl-6 flex flex-col gap-2 pt-2">
+                            <li>
+                                <svg class="fill-current text-white mr-2 inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089"><path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/></svg>
+                                <a class="underline text-red-100" href="#cms">CMS</a>
+                            </li>
+                            <li>
+                                <svg class="fill-current text-white mr-2 inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089"><path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/></svg>
+
+                                <a class="underline text-red-100" href="#site-statique">Site statique</a>
+                            </li>
+                            <li>
+                                <svg class="fill-current text-white mr-2 inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089"><path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/></svg>
+
+                                <a class="underline text-red-100" href="#site-dynamique">Site dynamique</a>
+                            </li>
                         </ol>
                     </li>
 
-                    <li><a class="underline text-red-100" href="#workflow">Workflow</a></li>
-                    <li><a class="underline text-red-100" href="#soft-skill">Soft Skill</a></li>
+                    <li>
+                        <svg class="fill-current text-white mr-2 inline-block w-6 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="-34 1 511 511.99899">
+                            <g id="surface1">
+                                <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                            </g>
+                        </svg>
+                        <a class="underline text-red-100" href="#workflow">Workflow</a>
+                    </li>
+                    <li>
+                        <svg class="fill-current text-white mr-2 inline-block w-6 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="-34 1 511 511.99899">
+                            <g id="surface1">
+                                <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                            </g>
+                        </svg>
+                        <a class="underline text-red-100" href="#soft-skill">Soft Skill</a>
+                    </li>
                 </ol>
             </article>
         </section>
@@ -74,16 +107,16 @@ const activeLink = "competences";
             </header>
               <div class="pt-4 flex flex-col justify-center">
                 <article id="transversal" class="pt-4 px-8 w-full">
-                    <header class="rounded-full p-2 bg-red-400">
+                    <header class="rounded-full p-2 bg-main-light">
                         <h3 class="text-center font-bold text-xl text-white">Transversal</h3>
                     </header>
 
-                    <div class="grid grid-cols-3 gap-4 md:pt-8">
+                    <div class="md:grid md:grid-cols-3 md:gap-4 md:pt-8">
                         <article id="bdd">
                             <header>
                                 <h4 class="text-center text-lg font-bold p-2 text-red-500">Base de données</h4>
                             </header>
-                            <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                            <section class="p-8 bg-gray-100 flex flex-col items-center gap-6 shadow">
                                 <p class="font-bold">MySql
                                     <svg class="inline-block mb-2 ml-4" height="36" viewBox="0 0 60 60" width="36"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +174,7 @@ const activeLink = "competences";
                         <article id="javascript">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-red-500">Javascript</h4>
-                                <section class="p-8 bg-gray-100  flex flex-col items-center gap-6">
+                                <section class="p-8 bg-gray-100  flex flex-col items-center gap-6 shadow">
                                     <p class="font-bold">Typescript</p>
                                     <p class="font-bold">Jquery</p>
                                     <p class="font-bold">Jest</p>
@@ -151,7 +184,7 @@ const activeLink = "competences";
                         <article id="seo">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-red-500">SEO</h4>
-                                <section class="p-8 bg-gray-100  flex flex-col items-center gap-6">
+                                <section class="p-8 bg-gray-100  flex flex-col items-center gap-6 shadow">
                                     <p class="font-bold">Google Analytics</p>
                                     <p class="font-bold">RGPD</p>
                                 </section>
@@ -161,7 +194,7 @@ const activeLink = "competences";
                         <article id="concept">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-red-500">Concept</h4>
-                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6 shadow">
                                     <p class="font-bold">POO</p>
                                     <p class="font-bold">MVC</p>
                                     <p class="font-bold">CRUD</p>
@@ -171,7 +204,7 @@ const activeLink = "competences";
                         <article id="php">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-red-500">PHP</h4>
-                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6 shadow">
                                     <p class="font-bold">PHP-Unit</p>
                                 </section>
                             </header>
@@ -179,7 +212,7 @@ const activeLink = "competences";
                         <article id="librairies">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-red-500">Librairies</h4>
-                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6 shadow">
                                     <p class="font-bold">Google Map</p>
                                 </section>
                             </header>
@@ -189,7 +222,7 @@ const activeLink = "competences";
                 </article>
 
                 <article id="site-statique" class="py-4 px-8 w-full">
-                    <header class="rounded-full p-2 bg-red-400">
+                    <header class="rounded-full p-2 bg-main-light">
                         <h3 class="text-center font-bold text-xl text-white">Site statique</h3>
                     </header>
                     <div class=" md:pt-8 flex flex-row justify-center">
@@ -197,7 +230,7 @@ const activeLink = "competences";
                             <header>
                                 <h4 class="text-center text-lg font-bold p-2 text-red-500">Frameworks/Librairies</h4>
                             </header>
-                            <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                            <section class="p-8 bg-gray-100 flex flex-col items-center gap-6 shadow">
                                 <p class="font-bold">Astro</p>
                             </section>
                         </article>
@@ -207,17 +240,17 @@ const activeLink = "competences";
 
 
                 <article id="site-dynamique" class="pt-4 px-8 w-full">
-                    <header class="rounded-full p-2 bg-red-400">
+                    <header class="rounded-full p-2 bg-main-light">
                         <h3 class="text-center font-bold text-xl text-white">Site dynamique</h3>
                     </header>
 
-                    <div class="flex flex-row justify-center gap-24 md:pt-8">
-                        <article id="mpa" class="w-4/12">
+                    <div class="flex flex-col md:flex-row md:justify-center md:gap-24 md:pt-8">
+                        <article id="mpa" class="md:w-4/12">
                             <header>
                                 <h4 class="text-center text-lg font-bold p-2 text-red-500">Multi Page Application</h4>
                             </header>
-                            <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
-                                <p class="font-bold w-">Laravel
+                            <section class="p-8 bg-gray-100 flex flex-col md:items-center gap-6 shadow">
+                                <p class="font-bold">Laravel
                                     <svg class="inline-block mb-2 ml-4" height="36" viewBox="0 0 60 60" width="36"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <g id="Icons">
@@ -273,10 +306,10 @@ const activeLink = "competences";
                                 <p class="font-bold">Codeigniter 3</p>
                             </section>
                         </article>
-                        <article id="spa" class="w-4/12">
+                        <article id="spa" class="md:w-4/12">
                             <header>
                                 <h4 class="text-center font-bold p-2 text-red-500">Single Page Application</h4>
-                                <section class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                                <section class="p-8 bg-gray-100 flex flex-col md:items-center gap-6 shadow">
                                     <p class="font-bold">API-Platform
                                         <svg class="inline-block mb-2 ml-4" height="36" viewBox="0 0 60 60" width="36"
                                              xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +379,7 @@ const activeLink = "competences";
                 </h2>
             </header>
             <div class=" md:py-8 flex flex-row justify-center">
-                <article class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                <article class="p-8 bg-gray-100 flex flex-col md:items-center gap-6 shadow">
                     <p class="font-bold">Travail en équipe</p>
                     <p class="font-bold">Ténacité à résoudre les défis techniques</p>
                     <p class="font-bold">Organisation</p>
@@ -363,7 +396,7 @@ const activeLink = "competences";
                 </h2>
             </header>
             <div class=" md:py-8 flex flex-row justify-center">
-                <article class="p-8 bg-gray-100 flex flex-col items-center gap-6">
+                <article class="p-8 bg-gray-100 flex flex-col md:items-center gap-6 shadow">
                     <p class="font-bold">GIT (Github/Bitbucket)</p>
                     <p class="font-bold">PHP-Storm (chez moi) / Sublime text / Vs Code ( en entreprise)</p>
                     <p class="font-bold">Composer</p>
@@ -380,3 +413,11 @@ const activeLink = "competences";
 
 
 </BaseLayout>
+<div id="scrollToTop" class="cursor-pointer z-50 bottom-0 right-0 bg-black">
+    <p class="p-4 text-center text-white font-bold text-2xl">
+        <svg class="inline-block w-8 h-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.454 50.454"><path d="M42.359 25.479L27.122 1.25c-1.048-1.667-2.747-1.667-3.795 0L8.095 25.479c-1.048 1.667-.316 2.801 1.635 2.532l5.43-.885c1.95-.269 3.531 1.11 3.531 3.079v16.683a3.566 3.566 0 003.565 3.566h5.935a3.565 3.565 0 003.566-3.566V30.206c0-1.969 1.582-3.348 3.531-3.079l5.436.885c1.95.268 2.683-.866 1.635-2.533z"/></svg>
+        UP
+        <svg class="inline-block w-8 h-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.454 50.454"><path d="M42.359 25.479L27.122 1.25c-1.048-1.667-2.747-1.667-3.795 0L8.095 25.479c-1.048 1.667-.316 2.801 1.635 2.532l5.43-.885c1.95-.269 3.531 1.11 3.531 3.079v16.683a3.566 3.566 0 003.565 3.566h5.935a3.565 3.565 0 003.566-3.566V30.206c0-1.969 1.582-3.348 3.531-3.079l5.436.885c1.95.268 2.683-.866 1.635-2.533z"/></svg>
+
+    </p>
+</div>

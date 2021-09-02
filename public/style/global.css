@@ -4,19 +4,39 @@
 @tailwind utilities;
 
 @layer utilities {
+    .text-main {
+        color: #ff4050;
+    }
+
+    .bg-main {
+        background-color: #ca1625;
+    }
+
+    .text-main-light {
+        color: #ff4050;
+    }
+
+    .bg-main-light {
+        background-color: #ff4050;
+    }
+
     .text-darkblue-custom {
-        color: #222831;
+        color: #242d53;
     }
+
     .bg-darkblue-custom {
-        background-color: #222831;
+        background-color: #242d53
     }
+
     .text-lightblue-custom {
-        color: #30475E;
+        color: #242d53;
     }
+
     .bg-lightblue-custom {
-        background-color: #30475E;
+        background-color: #242d53;
     }
+
     .bg-beige-custom {
-        background-color:#EEEBDD
+        background-color: #fffafa
     }
 }

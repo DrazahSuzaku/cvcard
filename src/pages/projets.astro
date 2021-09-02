@@ -1,16 +1,288 @@
 ---
 
-import MainHeader from '../components/MainHeader.astro'
-import Sidebar from '../components/Sidebar.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+// page
+const title = 'Eric Hazard Mes expériences';
+const description = "Découvrez mes expériences professionnelles ou de projets personnels dans le développement Web. Eric Hazard - Toulouse";
+const canonicalUrl = Astro.request.canonicalURL;
+const activeLink = "projets";
 
 ---
 
-<html lang="fr">
-<head>
-    <MainHeader/>
-</head>
+<BaseLayout
+        title={title}
+        description={description}
+        canonicalUrl={canonicalUrl}
+        activeLink={activeLink}
+>
+    <div class="px-8 md:px-32">
+        <h1 class="pt-10 text-center text-4xl font-bold pb-8">Mes projets personnels</h1>
 
-<body>
-<Sidebar/>
-</body>
-</html>
+        <section class="items-center flex flex-col pt-8 ">
+            <article class="bg-main-light w-full md:w-6/12 px-2 pt-1 pb-4 flex flex-col items-center shadow-md">
+                <div class="border-b-4 border-white w-full">
+                    <p class="text-center text-white font-bold text-xl ">Table des matières</p>
+                </div>
+                <ol class="flex flex-col gap-2 pt-4">
+                    <li>
+                        <svg class="fill-current text-white mr-2 inline-block w-6 h-6"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="-34 1 511 511.99899">
+                            <g id="surface1">
+                                <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                            </g>
+                        </svg>
+                        <a class="underline text-red-100" href="#site-cv">Site CV</a>
+                    </li>
+                    <li>
+                        <svg class="fill-current text-white mr-2 inline-block w-6 h-6"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="-34 1 511 511.99899">
+                            <g id="surface1">
+                                <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                            </g>
+                        </svg>
+                        <a class="underline text-red-100" href="#applications-jdr">Applications Jeu de Rôle</a>
+                        <ol class="pl-6 flex flex-col gap-2 pt-2">
+                            <li>
+                                <svg class="fill-current text-white mr-2 inline-block w-4 h-4"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                    <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                </svg>
+                                <a class="underline text-red-100" href="#session-manager">Session Manager</a>
+                            </li>
+
+                            <li>
+                                <svg class="fill-current text-white mr-2 inline-block w-4 h-4"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                    <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                </svg>
+
+                                <a class="underline text-red-100" href="#campaign-introduction-manager">Campaign
+                                    Introduction Manager</a>
+
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <div class="md:flex md:flex-col md:items-center pt-8 ">
+            <div class="md:w-6/12 bg-white md:p-8 shadow-xl">
+                <section id="site-cv">
+                    <h2 class="text-center text-2xl text-white md:p-4 bg-darkblue-custom border-2 shadow-md">Site
+                        CV</h2>
+                    <p class="pt-8">Vous pouvez trouver le répertoire GIT du projet en public <a
+                            class="underline cursor-pointer text-main" href="TODO">ici</a>.</p>
+                    <article class="pt-8">
+                        <h4 class="text-center text-bold text-xl text-main py-4">Présentation</h4>
+                        <p>Ce projet me permet de mettre en avant mes compétences de développement Web par la
+                            construction
+                            d'un site vitrine tout en étoffant les informations contenues dans mon CV.</p>
+                        <br>
+                        <p>Les utilisateurs sont en premier lieu les recruteurs et en second lieu de futurs clients dans
+                            le
+                            cadre de prestations qui ne rentreraient pas en conflit avec mon travail.</p>
+                    </article>
+
+                    <article class="py-2">
+                        <h4 class="text-center text-bold text-xl text-main py-4">Objectifs</h4>
+                        <div class="flex justify-center md:justify-start">
+                            <ol class="flex flex-col gap-2">
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+
+                                    Référencement
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Rapidité
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Responsive
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="py-2">
+                        <h4 class="text-center text-bold text-xl text-main py-4">Stack Technique</h4>
+                        <p>Le choix de l'outil s'est porté sur <a
+                                href="https://docs.astro.build/fr/getting-started">Astro</a> qui est un générateur de
+                            site statique.</p>
+                        <p>L'avantage de cet outil est qu'il permet d'utiliser un système de modules comme dans les
+                            frameworks et librairies javascripts, ce qui me permet d'utiliser mon expérience sur React.
+                            Il est même possible d'utilser des composants React directement.</p>
+                        <br>
+                        <p>Astro compile ensuite le projet et le sert en pur HTML/CSS, ce qui est très pratique à
+                            déployer et permet une rapidité d'exécution sans complexité inutile.</p>
+                        <br>
+                        <p>En ce qui concerne le visuel, j'ai choisi la librairie <a href="https://tailwindcss.com/">Tailwind</a>
+                            qui permet d'accélérer l'intégration grâce à des classes bien pensées et non contraignantes.
+                        </p>
+
+                    </article>
+
+                    <article class="md:py-2">
+                        <h4 class="text-center text-bold text-xl text-main  py-4">Développement et retour</h4>
+                        <p>J'ai réalisé une maquette sommaire sur Figma et j'ai écrit et travaillé mes textes et
+                            sections en amont.</p>
+                        <br>
+                        <p>Astro s'est révélé tenir ses promesses en ce qui concerne sa facilité de prise en main. Il ne
+                            m'a même pas été nécessaire d'utiliser des composants React car les composants .astro et
+                            l'utilisation du pur javascript ont été largement suffisantes pour cet usage.</p>
+                    </article>
+                </section>
+
+                <section id="session-manager">
+                    <h2 class="text-center text-2xl text-white md:p-4 bg-darkblue-custom border-2 shadow-md">
+                        Applications Jeu de Rôle</h2>
+                    <p class="pt-8">Les répertoires GIT des projets JDR est pour le moment en privé.</p>
+                    <br>
+                    <p>Le jeu de rôle sur table est une activité ludique que j'aime particulièrement. J'ai pu
+                        redécouvrir depuis quelques années cette activité de loisir et j'ai pris la décision de m'y
+                        investir sur mon temps libre.</p>
+                    <br>
+                    <p>C'est la raison pour laquelle, je suis l'un des trois fondateurs d'une association (bientôt sur
+                        les rails) sur le jeu de rôle à Toulouse : <strong class="text-main text-bold">La guilde des
+                            Arpenteurs</strong>.</p>
+                    <br>
+                    <p>Dans le cadre de cette implication dans le jeu de rôle, il m'est venu l'idée de développer des
+                        outils supplémentaires pour aider le Maître de jeu dans son rôle. Il existe déjà nombres
+                        d'outils utiles mais il m'est apparu que certains aspects du jeu de rôle sur table (et non pas à
+                        distance car il existe de nombreux projets dingues comme
+                        <a class="text-main underline cursor-pointer"
+                           href="https://www.youtube.com/watch?v=_nwmbU0dQNk&t=1s">Let's Role</a>) ne bénéficiaient pas
+                        d'outils adaptés.</p>
+
+
+                    <p></p>
+                    <article class="md:pt-8">
+                        <h3 class="text-center text-xl text-white md:p-4 bg-main border-2 shadow-md">Session
+                            Manager</h3>
+
+                        <h4 class="text-center text-bold text-xl text-main md:pb-2">Présentation</h4>
+                        <p>Ce projet a pour origine le fait qu'il n'existe pas vraiment d'outil adapté à la gestion
+                            d'une session de jeu de rôle. Il existe des outils de world-buildings, des générateurs de
+                            PNJ, des lanceurs de dés etc. Toutefois, il n'existe pas beaucoup d'outils spécifiquement
+                            conçus pour alléger le travail du Maitre de jeu pendant la session, lorsqu'il doit gérer
+                            énormément de choses face aux joueurs.</p>
+                        <br>
+                        <p>L'idée est donc de créer une application qui permet de lancer une session, de logguer les
+                            actions des joueurs, de gérer leurs déplacements, de générer des lieux/PNJ/météo à la volée,
+                            d'avoir toutes les informations d'un lieu en une seule fenêtre, etc.</p>
+                        <br>
+                        <p>Les utilisateurs de l'application sont les maîtres de jeu lors de leurs parties. J'ai pu
+                            effectuer des sondages et enquêtes sur leurs besoins et leurs attentes.</p>
+                    </article>
+
+                    <article class="md:py-2">
+                        <h3 class="text-center text-bold text-xl text-main">Objectifs</h3>
+                        <div class="md:flex md:flex-row md:gap-6">
+                            <ol class="flex flex-col gap-2">
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Interface complète et claire
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Modulaire
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Uniquement sur Desktop et Tablette
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Données utilisables par d'autres applications
+                                </li>
+                            </ol>
+                            <ol class="flex flex-col gap-2">
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Theme customisable
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Anglais/Français
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Multi-utilisateur
+                                </li>
+                                <li>
+                                    <svg class="fill-current text-black mr-2 inline-block w-4 h-4"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.089 343.089">
+                                        <path d="M341.521 167.415a6.79 6.79 0 00-.885-.885L243.46 67.265a7.837 7.837 0 00-13.584 5.225v52.245h-125.91c-4.702 0-9.927 1.045-9.927 5.224v83.592A12.016 12.016 0 00103.966 224h125.91v47.02a8.358 8.358 0 004.702 7.314h3.135a8.362 8.362 0 005.747-2.612l97.176-98.743a6.79 6.79 0 00.885-9.564zM70.531 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM39.184 122.122a7.837 7.837 0 00-7.837 7.837v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837zM7.837 122.122A7.837 7.837 0 000 129.959v83.592a7.837 7.837 0 0015.674 0v-83.592a7.837 7.837 0 00-7.837-7.837z"/>
+                                    </svg>
+                                    Interface Admin
+                                </li>
+
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="md:py-2">
+                        <h3 class="text-center text-bold text-xl text-main md:pb-2">Stack Technique</h3>
+                        <p>Afin d'obtenir la fluidité de navigation voulue, le choix s'est porté sur une Single Page Application servie par une API (selon une grande partie des principes REST).</p>
+                        <br>
+                        <p>J'ai utilisé API Platform qui a le double mérite d'être assez simple d'utilisation et qui est bâti sur une base Symfony que je connais plutôt bien. Pour la SPA, j'ai choisi React pour la rapidité d'apprentissage et la liberté de pouvoir utiliser des librairies tiers pour compléter.</p>
+                        <br>
+                        <p>Pour l'éditeur de texte, j'avais choisi la librairie Slate qui permet de construire un éditeur de texte grâce à des composants React, l'idée étant que mon auto-formation à React me permettrait aussi de pouvoir customiser cette librairie.</p>
+
+                    </article>
+
+                    <article class="md:py-2">
+                        <h3 class="text-center text-bold text-xl text-main md:pb-2">Développement et retour</h3>
+                        <img src="/assets/jdr.png" alt="">
+                        <p>Le développement du premier prototype fut un challenge que j'ai pu relever après m'être moi même formé sur plusieurs librairies.</p>
+                        <br>
+                        <p>Les points les plus délicats ont concerné l'écosystème React, Slate et l'authentification :</p>
+                        <br>
+                        <p>React est une librairie efficace et bien pensée. Néanmoins, sa grande liberté quant aux choix des librairies pour ajouter des features comme la gestion du state avec Redux ou React Router, est à double tranchant. Il faut apprendre de multiples librairies, vérifier que les projets sont toujours maintenus et régler les problèmes de cohabitation. Le choix des librairies est parfois cornélien, surtout pour un développeur qui travaille seul.</p>
+                        <br>
+                        <p>Slate permet de customiser son éditeur de texte et bien maitrisé, il permet de faire un peu ce que l'on veut. Mais sa documentation est lacunaire et toutes les fonctionnalités de base ne sont pas présentes. Pour prototyper, cela convient, mais la librairie demande trop d'investissement et n'est pas assez mature pour être utilisée sans crainte dans un projet au long court.</p>
+                        <br>
+                        <p>L'authentification d'une API dont les clients ne sont pas hébergés sur le même domaine tend à devenir complexe. En effet, même avec un système de JWT Token, le stockage dudit token est problématique car les éditeurs de navigateurs Web ont indiqué renforcer leurs restrictions de sécurité sur les cookies tiers. La mise en place d'un système complet d'authentification demande une grande maitrise du sujet ou alors il faut se tourner vers des solutions payantes.</p>
+
+
+
+
+                    </article>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</BaseLayout>

@@ -25,7 +25,7 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
 
 <body>
 <div class="flex flex-col md:flex-row">
-    <header class="w-screen md:w-1/6 bg-red-600 md:min-h-screen">
+    <header class="w-screen md:w-1/6 bg-main md:min-h-screen">
         <Sidebar
                 activeLink={activeLink}
         />
@@ -34,9 +34,10 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
     <main class="w-full md:w-5/6 bg-beige-custom">
         <slot/>
     </main>
-</div>
 
+</div>
 <script>
+    const rootElement = document.documentElement
     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     const navbar = document.querySelector('#navbar');
     const buttonMenu = document.querySelector("#buttonMenu");
@@ -44,6 +45,27 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
     //  START Page Index //
     const indexSidePicture = document.querySelector('#sidePicture');
     // END Page Index //
+
+    // START UptoScroll
+    const upToScrollButton = document.querySelector('#scrollToTop');
+    const handleScroll = () => {
+        let scrollableHeight = rootElement.scrollHeight - rootElement.clientHeight;
+        const RATIO = 0.8;
+        console.log((rootElement.scrollTop / scrollableHeight) > RATIO)
+        if ((rootElement.scrollTop / scrollableHeight ) > 0.80) {
+            upToScrollButton.style.display="block";
+        } else {
+            upToScrollButton.style.display="none";
+        }
+    };
+    const scrollToTop = () => {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+    };
+    // END  UptoScroll //
+
     if(isMobile){
         navbar.classList.add('hidden');
         indexSidePicture.classList.add('hidden');
@@ -57,6 +79,11 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
                 navbar.classList.add('hidden');
             }
         });
+    }
+
+    if(upToScrollButton){
+        document.addEventListener("scroll", handleScroll);
+        upToScrollButton.addEventListener("click", scrollToTop);
     }
 </script>
 

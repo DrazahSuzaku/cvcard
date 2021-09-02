@@ -1,16 +1,38 @@
 ---
 
-import MainHeader from '../components/MainHeader.astro'
-import Sidebar from '../components/Sidebar.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+// page
+const title = 'Eric Hazard CV';
+const description = "Le CV de Eric Hazard, développeur Web sur Toulouse est disponible en téléchargement sur cette page.";
+const canonicalUrl = Astro.request.canonicalURL;
+const activeLink = "cv";
 
 ---
 
-<html lang="fr">
-<head>
-    <MainHeader/>
-</head>
+<BaseLayout
+        title={title}
+        description={description}
+        canonicalUrl={canonicalUrl}
+        activeLink={activeLink}
+>
+    <div class="px-8 md:px-32">
+        <h1 class="pt-16 text-center text-2xl font-bold">CV Eric Hazard</h1>
 
-<body>
-<Sidebar/>
-</body>
-</html>
+        <div class="h-full ">
+            <p class="py-12 text-center">Vous pouvez télécharger mon CV sur le lien qui suit :</p>
+
+            <section class="w-6/12 m-auto bg-gray-100 h-24 flex flex-col content-center justify-center">
+                <p class="text-center">eric.hazard31@gmail.com</p>
+            </section>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</BaseLayout>
