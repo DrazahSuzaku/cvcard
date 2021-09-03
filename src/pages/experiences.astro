@@ -17,90 +17,155 @@ const activeLink = "experiences";
         activeLink={activeLink}
 >
     <h1 class="pt-10 text-center text-4xl font-bold">Mes expériences et formations</h1>
-    <div class="flex justify-center">
-
-    </div>
-    <section class="flex justify-center pt-16">
-        <div class="w-9/12 flex flex-col md:flex-row">
+    <section class="items-center flex flex-col pt-8" id="table-des-matieres">
+        <article class="bg-main-light w-full md:w-6/12 p-2 flex flex-col items-center shadow-md">
+            <div class="border-b-4 border-white w-full">
+                <p class="text-center text-white font-bold text-xl ">Table des matières</p>
+            </div>
+            <ol class="flex flex-col gap-2 pt-4">
+                <li>
+                    <svg class="fill-current text-white mr-2 inline-block w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="-34 1 511 511.99899">
+                        <g id="surface1">
+                            <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                        </g>
+                    </svg>
+                    <a class="underline text-red-100" href="#experience-professionnelle">Expérience professionnelle</a>
+                </li>
+                <li>
+                    <svg class="fill-current text-white mr-2 inline-block w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="-34 1 511 511.99899">
+                        <g id="surface1">
+                            <path d="M 222.152344 0 L 0.5 128 L 0.5 383.996094 L 222.152344 512 L 443.808594 383.996094 L 443.808594 128 Z M 136.5625 296.351562 L 115.335938 317.582031 L 53.757812 256 L 115.335938 194.421875 L 136.5625 215.648438 L 96.210938 256 Z M 200.25 333.375 L 173.398438 319.949219 L 244.058594 178.625 L 270.910156 192.050781 Z M 328.972656 317.578125 L 307.742188 296.351562 L 348.097656 256 L 307.742188 215.648438 L 328.972656 194.417969 L 390.550781 256 Z M 328.972656 317.578125 "/>
+                        </g>
+                    </svg>
+                    <a class="underline text-red-100" href="#formation">Formation</a>
+                </li>
+            </ol>
+        </article>
+    </section>
+    <section class="flex flex-col items-center pt-16" id="experience-professionnelle">
+        <header class="w-10/12 pb-8">
+            <h2 class="bg-lightblue-custom rounded-full p-2 text-white text-center text-2xl font-bold shadow-md border-white border-2">
+                Expérience professionnelle</h2>
+        </header>
+        <article class="w-9/12 flex flex-col md:flex-row">
             <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-red-600">
                 <div class="bg-red-600 p-4">
                     <p class="text-right text-white md:pr-4">Janvier 2020 / Septembre 2021 (en cours)</p>
                 </div>
             </div>
-
             <div class="w-8/12 pl-8">
-                <h2 class="text-red-600 font-bold">Projet personnel Jeu de Rôle</h2>
+                <h3 class="text-red-600 font-bold pt-4">Projet personnel Jeu de Rôle</h3>
                 <ul class="pt-6 flex flex-col gap-2">
                     <li>
-                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                            <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                        </svg>
                         Construction du projet et analyse du besoin
                         <ul class="pl-12 pt-2 flex flex-col gap-2">
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Enquête sur les utilisateurs
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Pratique du jeu de rôle selon le point de vue de l'utilisateur
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Définition des besoins
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Benchmark des applications desktop/mobile existantes
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                            <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                        </svg>
                         Construction des spécifications
                         <ul class="pl-12 pt-2 flex flex-col gap-2">
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Définition de deux applications
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Choix des technologies appropriées
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Auto-Formation sur Api-Platform, Symfony 5 et React
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                            <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                        </svg>
                         Réalisation des projets
                         <ul class="pl-12 pt-2 flex flex-col gap-2">
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Test des stacks techniques
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Premiers prototypes
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Premiers retours et modification des choix techniques
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Seconde itération
                             </li>
                         </ul>
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <section class="flex justify-center pt-16">
-
-        <div class="w-9/12 flex flex-col md:flex-row">
+        </article>
+        <article class="w-9/12 flex flex-col md:flex-row pt-8">
             <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-red-600">
                 <div class="bg-red-600 p-4">
                     <p class="text-white text-right md:pr-4">Septembre 2017 / Septembre 2019</p>
@@ -108,90 +173,150 @@ const activeLink = "experiences";
             </div>
 
             <div class="w-8/12 pl-8">
-                <h2 class="text-red-600 font-bold">Agence Web Agoravita - CDI</h2>
+                <h3 class="text-red-600 font-bold pt-4">Agence Web Agoravita - CDI</h3>
                 <ul class="pt-6 flex flex-col gap-2">
                     <li>
-                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                            <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                        </svg>
                         Développement et maintenance de sites en utilisant le framework PHP spécifique à l'entreprise.
                         <ul class="pl-12 pt-2 flex flex-col gap-2">
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Sites statiques
                                 <ul class="pl-12 pt-2 flex flex-col gap-2">
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Meta-données SEO
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Structure HTML
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         RGPD
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Mise en place de Google Map et Google Analytics
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Sites Dynamiques
                                 <ul class="pl-12 pt-2 flex flex-col gap-2">
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Création de CRUD
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Authentification et autorisations
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Espace administration (Back-office)
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Communication avec prestataires
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Gestion d'import de fichiers
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Génération de PDF
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Export de résultats de requêtes SQL spécifiques
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Maintenance de sites
                                 <ul class="pl-12 pt-2 flex flex-col gap-2">
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Résolution de bugs
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Mise en production
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Tests
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Sauvegarde BDD
                                     </li>
                                     <li>
-                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/></svg>
+                                        <svg class="fill-current text-main w-3 h-3 inline-block pb-1"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M256 0C114.618 0 0 114.618 0 256s114.618 256 256 256 256-114.618 256-256S397.382 0 256 0zm0 469.333c-117.818 0-213.333-95.515-213.333-213.333S138.182 42.667 256 42.667 469.333 138.182 469.333 256 373.818 469.333 256 469.333z"/>
+                                        </svg>
                                         Rédaction de documentation
                                     </li>
                                 </ul>
@@ -200,102 +325,143 @@ const activeLink = "experiences";
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
 
-    <section class="flex justify-center pt-16 pb-8">
-        <div class="w-9/12 flex flex-col md:flex-row">
+        </article>
+        <article class="w-9/12 flex flex-col md:flex-row pt-8">
             <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-red-600">
                 <div class="bg-red-600 p-4">
                     <p class="text-white text-right md:pr-4">Mai 2016 / Février 2017</p>
                 </div>
             </div>
-
-            <div class="w-6/12 pl-8">
-                <h2 class="text-red-600 font-bold">DOCTOR IT - Stage puis CDD</h2>
+            <div class="w-6/12 pl-8 pt-4">
+                <h3 class="text-red-600 font-bold">DOCTOR IT - Stage puis CDD</h3>
                 <ul class="pt-6 flex flex-col gap-2">
                     <li>
-                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                        <svg class="fill-current text-red-600 w-5 h-5 inline-block pb-1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                            <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                        </svg>
                         Développement d'outils pour l'entreprise
                         <ul class="pl-12 pt-2 flex flex-col gap-2">
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Générateur de sites vitrines statiques
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Interfaces pour les vendeurs de l'entreprise
                             </li>
                             <li>
-                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107"><path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/></svg>
+                                <svg class="fill-current text-main-light w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Création de modules
                             </li>
                         </ul>
                     </li>
                 </ul>
             </div>
-        </div>
+
+        </article>
     </section>
 
-    <section class="flex justify-center pt-16 pb-8">
-        <div class="w-9/12 flex flex-col md:flex-row">
-            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-red-600">
-                <div class="bg-indigo-600 p-4">
+
+    <section class="flex flex-col items-center pt-16 pb-8" id="formation">
+        <header class="w-10/12 pb-8">
+            <h2 class="bg-main-light rounded-full p-2 text-white text-center text-2xl font-bold shadow-md border-white border-2">
+                Formation</h2>
+        </header>
+        <article class="w-9/12 flex flex-col md:flex-row">
+            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-blue-900">
+                <div class="bg-darkblue-custom p-4">
+                    <p class="text-white text-right md:pr-4">2020-2021</p>
+                </div>
+            </div>
+            <div class="w-8/12 pl-8">
+                <h3 class="text-darkblue-custom font-bold pt-4">Auto-formation sur React/Symfony/Api-Platform</h3>
+                <p class="pt-6">Auto-formation avec les cours de Maximilian Schwarzmüller sur Udemy et Academind.</p>
+            </div>
+        </article>
+        <article class="w-9/12 flex flex-col md:flex-row pt-8">
+            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-blue-900">
+                <div class="bg-darkblue-custom p-4">
                     <p class="text-white text-right md:pr-4">2015-2016</p>
                 </div>
             </div>
-
-            <div class="w-6/12">
-                <h2 class="text-indigo-600 font-bold">Formation Développeur Web (Bac+2) à AP formation</h2>
-                <p>Formation condensée en un an avec stage professionnel. HTML/CSS/JS, Algorithmie,  Symfony</p>
+            <div class="w-8/12 pl-8">
+                <h3 class="text-darkblue-custom font-bold pt-4">Formation Développeur Web (Bac+2) à AP formation</h3>
+                <p class="pt-6">Formation condensée en un an avec stage professionnel. HTML/CSS/JS, Algorithmie,
+                    Symfony</p>
             </div>
-        </div>
-    </section>
+        </article>
 
-    <section class="flex justify-center pt-16 pb-8">
-        <div class="w-9/12 flex flex-col md:flex-row">
-            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-red-600">
-                <div class="bg-indigo-600 p-4">
+        <article class="w-9/12 flex flex-col md:flex-row pt-8">
+            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-blue-900">
+                <div class="bg-darkblue-custom p-4">
                     <p class="text-white text-right md:pr-4">2012-2014</p>
                 </div>
             </div>
-
-            <div class="w-6/12">
-                <h2 class="text-indigo-600 font-bold">Préparation concours Agrégation Histoire</h2>
-                <p>J'ai préparé et tenté les concours de l'agrégation en Histoire pendant deux ans. J'ai acquis des méthodes pour organiser son travail avec efficacité </p>
+            <div class="w-8/12 pl-8">
+                <h3 class="text-darkblue-custom font-bold">Préparation concours Agrégation Histoire</h3>
+                <p class="pt-6">J'ai préparé et tenté les concours de l'agrégation en Histoire pendant deux ans. J'ai
+                    acquis des
+                    méthodes pour organiser son travail avec efficacité </p>
             </div>
-        </div>
-    </section>
-
-    <section class="flex justify-center pt-16 pb-8">
-        <div class="w-9/12 flex flex-col md:flex-row">
-            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-red-600">
-                <div class="bg-indigo-600 p-4">
+        </article>
+        <article class="w-9/12 flex flex-col md:flex-row pt-8">
+            <div class="w-4/12 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-blue-900">
+                <div class="bg-darkblue-custom p-4">
                     <p class="text-white text-right md:pr-4">2013</p>
                 </div>
             </div>
-
-            <div class="w-6/12">
-                <h2 class="text-indigo-600 font-bold">Master 2 Histoire Médiévale (Mention TB)</h2>
-                <p>Mémoire portant sur l'utilisation des différentes cours de justice par les élites bourgeoises de Montpellier au XXXX pour obtenir gain de cause.</p>
+            <div class="w-8/12 pl-8">
+                <h3 class="text-darkblue-custom font-bold">Master 2 Histoire Médiévale (Mention TB)</h3>
+                <p class="pt-6">Mémoire portant sur l'utilisation des différentes cours de justice par les élites
+                    bourgeoises de
+                    Montpellier au 14ème siècle pour obtenir gain de cause.</p>
                 <ul class="pt-6 flex flex-col gap-2">
                     <li>
+                        <svg class="fill-current text-darkblue-custom w-5 h-5 inline-block pb-1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                            <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                        </svg>
                         Construction et réalisation d'un travail de recherche universitaire
                         <ul class="pl-12 pt-2 flex flex-col gap-2">
                             <li>
-                                <svg class="inline-block w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.613 297.613"><circle cx="15.279" cy="14.83" r="14.83"/><circle cx="59.32" cy="59.769" r="14.83"/><circle cx="59.32" cy="14.83" r="14.83"/><circle cx="104.261" cy="59.769" r="14.83"/><circle cx="104.261" cy="103.81" r="14.83"/><circle cx="104.261" cy="14.83" r="14.83"/><circle cx="148.302" cy="59.769" r="14.83"/><circle cx="148.302" cy="103.81" r="14.83"/><circle cx="148.302" cy="14.83" r="14.83"/><circle cx="192.343" cy="59.769" r="14.83"/><circle cx="192.343" cy="103.81" r="14.83"/><circle cx="148.302" cy="147.852" r="14.83"/><circle cx="192.343" cy="147.852" r="14.83"/><circle cx="104.261" cy="192.79" r="14.831"/><circle cx="148.302" cy="192.79" r="14.831"/><circle cx="192.343" cy="192.79" r="14.831"/><circle cx="59.32" cy="236.887" r="14.83"/><circle cx="104.261" cy="236.887" r="14.83"/><circle cx="148.302" cy="236.887" r="14.83"/><circle cx="192.343" cy="236.887" r="14.83"/><circle cx="238.238" cy="103.81" r="14.83"/><circle cx="238.238" cy="147.852" r="14.83"/><circle cx="238.238" cy="192.79" r="14.831"/><circle cx="15.279" cy="282.782" r="14.831"/><circle cx="59.32" cy="282.782" r="14.831"/><circle cx="104.261" cy="282.782" r="14.831"/><circle cx="148.302" cy="282.782" r="14.831"/><circle cx="282.334" cy="147.852" r="14.83"/></svg>
+                                <svg class="fill-current text-darkblue-custom w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
                                 Paléographie
                             </li>
-                            <li>Recherche et synthèse d'informations</li>
-                            <li>Rédaction d'un texte scientifique</li>
+                            <li>
+                                <svg class="fill-current text-darkblue-custom w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
+                                Recherche et synthèse d'informations
+                            </li>
+                            <li>
+                                <svg class="fill-current text-darkblue-custom w-3 h-3 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.107 29.107">
+                                    <path d="M14.554 0C6.561 0 0 6.562 0 14.552c0 7.996 6.561 14.555 14.554 14.555 7.996 0 14.553-6.559 14.553-14.555C29.106 6.562 22.55 0 14.554 0z"/>
+                                </svg>
+                                Rédaction d'un texte scientifique
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
-        </div>
+        </article>
+
     </section>
-
-
 
 
 </BaseLayout>

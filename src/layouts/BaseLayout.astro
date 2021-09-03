@@ -68,7 +68,9 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
 
     if(isMobile){
         navbar.classList.add('hidden');
-        indexSidePicture.classList.add('hidden');
+        if(indexSidePicture) {
+            indexSidePicture.classList.add('hidden');
+        }
     }
 
     if(buttonMenu && navbar) {

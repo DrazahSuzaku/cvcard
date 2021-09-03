@@ -168,10 +168,11 @@ const activeLink = "projets";
 
                     <p></p>
                     <article class="md:pt-8">
-                        <h3 class="text-center text-xl text-white md:p-4 bg-main border-2 shadow-md">Session
-                            Manager</h3>
+                        <h3 class="text-center text-xl text-white md:p-4 bg-main border-2 shadow-md">
+                            Session Manager
+                        </h3>
 
-                        <h4 class="text-center text-bold text-xl text-main md:pb-2">Présentation</h4>
+                        <h4 class="text-center text-bold text-xl text-main md:pb-2 py-4">Présentation</h4>
                         <p>Ce projet a pour origine le fait qu'il n'existe pas vraiment d'outil adapté à la gestion
                             d'une session de jeu de rôle. Il existe des outils de world-buildings, des générateurs de
                             PNJ, des lanceurs de dés etc. Toutefois, il n'existe pas beaucoup d'outils spécifiquement
@@ -187,7 +188,7 @@ const activeLink = "projets";
                     </article>
 
                     <article class="md:py-2">
-                        <h3 class="text-center text-bold text-xl text-main">Objectifs</h3>
+                        <h4 class="text-center text-bold text-xl text-main py-4">Objectifs</h4>
                         <div class="md:flex md:flex-row md:gap-6">
                             <ol class="flex flex-col gap-2">
                                 <li>
@@ -254,31 +255,78 @@ const activeLink = "projets";
                     </article>
 
                     <article class="md:py-2">
-                        <h3 class="text-center text-bold text-xl text-main md:pb-2">Stack Technique</h3>
-                        <p>Afin d'obtenir la fluidité de navigation voulue, le choix s'est porté sur une Single Page Application servie par une API (selon une grande partie des principes REST).</p>
+                        <h4 class="text-center text-bold text-xl text-main md:pb-2 py-4">Stack Technique</h4>
+                        <p>Afin d'obtenir la fluidité de navigation voulue, le choix s'est porté sur une Single Page
+                            Application servie par une API (selon une grande partie des principes REST).</p>
                         <br>
-                        <p>J'ai utilisé API Platform qui a le double mérite d'être assez simple d'utilisation et qui est bâti sur une base Symfony que je connais plutôt bien. Pour la SPA, j'ai choisi React pour la rapidité d'apprentissage et la liberté de pouvoir utiliser des librairies tiers pour compléter.</p>
+                        <p>J'ai utilisé API Platform qui a le double mérite d'être assez simple d'utilisation et qui est
+                            bâti sur une base Symfony que je connais plutôt bien. Pour la SPA, j'ai choisi React pour la
+                            rapidité d'apprentissage et la liberté de pouvoir utiliser des librairies tiers pour
+                            compléter.</p>
                         <br>
-                        <p>Pour l'éditeur de texte, j'avais choisi la librairie Slate qui permet de construire un éditeur de texte grâce à des composants React, l'idée étant que mon auto-formation à React me permettrait aussi de pouvoir customiser cette librairie.</p>
+                        <p>Pour l'éditeur de texte, j'avais choisi la librairie Slate qui permet de construire un
+                            éditeur de texte grâce à des composants React, l'idée étant que mon auto-formation à React
+                            me permettrait aussi de pouvoir customiser cette librairie.</p>
 
                     </article>
 
                     <article class="md:py-2">
-                        <h3 class="text-center text-bold text-xl text-main md:pb-2">Développement et retour</h3>
-                        <img src="/assets/jdr.png" alt="">
-                        <p>Le développement du premier prototype fut un challenge que j'ai pu relever après m'être moi même formé sur plusieurs librairies.</p>
+                        <h3 class="text-center text-bold text-xl text-main py-4">Développement et retour</h3>
+                        <img class="py-2" src="/assets/jdr.png" alt="Session manager JDR">
+                        <p class="pt-2">Le développement du premier prototype fut un challenge que j'ai pu relever après m'être moi
+                            même formé sur plusieurs librairies.</p>
                         <br>
-                        <p>Les points les plus délicats ont concerné l'écosystème React, Slate et l'authentification :</p>
+                        <p>Les points les plus délicats ont concerné l'écosystème React, Slate et l'authentification
+                            :</p>
                         <br>
-                        <p>React est une librairie efficace et bien pensée. Néanmoins, sa grande liberté quant aux choix des librairies pour ajouter des features comme la gestion du state avec Redux ou React Router, est à double tranchant. Il faut apprendre de multiples librairies, vérifier que les projets sont toujours maintenus et régler les problèmes de cohabitation. Le choix des librairies est parfois cornélien, surtout pour un développeur qui travaille seul.</p>
+                        <p>React est une librairie efficace et bien pensée. Néanmoins, sa grande liberté quant aux choix
+                            des librairies pour ajouter des features comme la gestion du state avec Redux ou React
+                            Router, est à double tranchant. Il faut apprendre de multiples librairies, vérifier que les
+                            projets sont toujours maintenus et régler les problèmes de cohabitation. Le choix des
+                            librairies est parfois cornélien, surtout pour un développeur qui travaille seul.</p>
                         <br>
-                        <p>Slate permet de customiser son éditeur de texte et bien maitrisé, il permet de faire un peu ce que l'on veut. Mais sa documentation est lacunaire et toutes les fonctionnalités de base ne sont pas présentes. Pour prototyper, cela convient, mais la librairie demande trop d'investissement et n'est pas assez mature pour être utilisée sans crainte dans un projet au long court.</p>
+                        <p>Slate permet de customiser son éditeur de texte et bien maitrisé, il permet de faire un peu
+                            ce que l'on veut. Mais sa documentation est lacunaire et toutes les fonctionnalités de base
+                            ne sont pas présentes. Pour prototyper, cela convient, mais la librairie demande trop
+                            d'investissement et n'est pas assez mature pour être utilisée sans crainte dans un projet au
+                            long court.</p>
                         <br>
-                        <p>L'authentification d'une API dont les clients ne sont pas hébergés sur le même domaine tend à devenir complexe. En effet, même avec un système de JWT Token, le stockage dudit token est problématique car les éditeurs de navigateurs Web ont indiqué renforcer leurs restrictions de sécurité sur les cookies tiers. La mise en place d'un système complet d'authentification demande une grande maitrise du sujet ou alors il faut se tourner vers des solutions payantes.</p>
-
-
-
-
+                        <p>L'authentification d'une API dont les clients ne sont pas hébergés sur le même domaine tend à
+                            devenir complexe. En effet, même avec un système de JWT Token, le stockage dudit token est
+                            problématique car les éditeurs de navigateurs Web ont indiqué renforcer leurs restrictions
+                            de sécurité sur les cookies tiers. La mise en place d'un système complet d'authentification
+                            demande une grande maitrise du sujet ou alors il faut se tourner vers des solutions
+                            payantes.</p>
+                    </article>
+                    <article class="md:py-2">
+                        <h3 class="text-center text-bold text-xl text-main py-4">Développement Futurs</h3>
+                        <p>Fort de cette expérience de développement pour le premier prototype, je compte procéder à
+                            quelques changements :</p>
+                        <ol class="flex flex-col gap-4 pt-4">
+                            <li>
+                                <svg class="fill-current text-darkblue-custom w-5 h-5 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                                    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                                </svg>
+                                Développement d'une API d'authentification commune à toutes les applications (Terminé)
+                            </li>
+                            <li>
+                                <svg class="fill-current text-darkblue-custom w-5 h-5 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                                    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                                </svg>
+                                Évaluation d'une transition vers Angular pour la partie Front-End pour les bonnes
+                                pratiques et le cadre que le framework apporte.
+                            </li>
+                            <li>
+                                <svg class="fill-current text-darkblue-custom w-5 h-5 inline-block pb-1"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                                    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/>
+                                </svg>
+                                Migration de l'éditeur de texte vers une solution plus complète et qui gère le markdown
+                                et les mentions nativement.
+                            </li>
+                        </ol>
                     </article>
                 </section>
             </div>

@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 @layer utilities {
+    html {
+        scroll-behavior:smooth
+    }
     .text-main {
         color: #ff4050;
     }
