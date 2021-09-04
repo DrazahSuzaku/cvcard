@@ -16,7 +16,7 @@ const activeLink = "competences";
         canonicalUrl={canonicalUrl}
         activeLink={activeLink}
 >
-    <div class="px-8 sm:px-32">
+    <div class="px-8 md:px-32">
         <h1 class="pt-10 text-center text-4xl font-bold pb-8">Mes compétences et connaissances</h1>
         <section class="bg-gray-100 p-4 items-center flex flex-col shadow-sm">
             <p class="px-4 text-lg font-bold">Les technologies avec une
@@ -48,12 +48,10 @@ const activeLink = "competences";
             </p>
         </section>
         <section class="items-center flex flex-col pt-8">
-            <article class="bg-main w-full sm:w-6/12 p-2 flex flex-col items-center shadow-md">
+            <article class="bg-main w-full md:w-6/12 p-2 flex flex-col items-center shadow-md">
                 <div class="border-b-4 border-white w-full">
                     <p class="text-center text-white font-bold text-xl py-2">Table des matières</p>
-
                 </div>
-
                 <ol class="flex flex-col gap-2 pt-4">
                     <li>
                         <svg class="fill-current text-white mr-2 inline-block w-6 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="-34 1 511 511.99899">
@@ -100,7 +98,7 @@ const activeLink = "competences";
         </section>
         <section class="py-8" id="developpement-web">
             <header>
-                <h2 class="bg-lightblue-custom sm:rounded-full p-4 sm:p-2 text-white text-center text-xl sm:text-2xl font-bold shadow-md border-white border-2">
+                <h2 class="bg-darkblue-custom sm:rounded-full p-4 sm:p-2 text-white text-center text-xl sm:text-2xl font-bold shadow-md border-white border-2">
                     Développement Web</h2>
             </header>
               <div class="pt-4 flex flex-col justify-center">
@@ -108,7 +106,7 @@ const activeLink = "competences";
                     <header class="rounded-full p-1 sm:p-2 bg-main">
                         <h3 class="text-center font-bold text-xl text-white">Transversal</h3>
                     </header>
-                    <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:pt-8 flex flex-col gap-2">
+                    <div class="lg:grid xl:grid-cols-3 lg:grid-cols-2 lg:gap-4 lg:pt-8 flex flex-col gap-2">
                         <article id="bdd">
                             <header>
                                 <h4 class="text-center text-lg font-bold p-2 text-red-500">Base de données</h4>
@@ -236,17 +234,16 @@ const activeLink = "competences";
                 </article>
 
 
-                <article id="site-dynamique" class="pt-4 sm:px-8 w-full">
+                <article id="site-dynamique" class="pt-4 xl:px-8 w-full">
                     <header class="rounded-full p-2 bg-main">
                         <h3 class="text-center font-bold text-xl text-white">Site dynamique</h3>
                     </header>
-
-                    <div class="flex flex-col sm:flex-row sm:justify-center sm:gap-24 sm:pt-8">
-                        <article id="mpa" class="sm:w-4/12">
+                    <div class="flex flex-col xl:flex-row xl:justify-center xl:gap-24 lg:pt-8">
+                        <article id="mpa" class="xl:w-4/12">
                             <header>
-                                <h4 class="text-center text-lg font-bold p-2 text-red-500">Multi Page Application</h4>
+                                <h4 class="text-center font-medium p-2 text-main">Multi Page Application</h4>
                             </header>
-                            <section class="p-8 bg-gray-100 flex flex-col sm:items-center gap-6 shadow">
+                            <section class="p-8 bg-gray-100 flex flex-col xl:items-center gap-6 shadow">
                                 <p class="font-bold">Laravel
                                     <svg class="inline-block mb-2 ml-4" height="36" viewBox="0 0 60 60" width="36"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -303,10 +300,10 @@ const activeLink = "competences";
                                 <p class="font-bold">Codeigniter 3</p>
                             </section>
                         </article>
-                        <article id="spa" class="sm:w-4/12">
+                        <article id="spa" class="xl:w-4/12">
                             <header>
-                                <h4 class="text-center font-bold p-2 text-red-500">Single Page Application</h4>
-                                <section class="p-8 bg-gray-100 flex flex-col sm:items-center gap-6 shadow">
+                                <h4 class="text-center font-medium p-2 text-main">Single Page Application</h4>
+                                <section class="p-8 bg-gray-100 flex flex-col xl:items-center gap-6 shadow">
                                     <p class="font-bold">API-Platform
                                         <svg class="inline-block mb-2 ml-4" height="36" viewBox="0 0 60 60" width="36"
                                              xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +373,7 @@ const activeLink = "competences";
                 </h2>
             </header>
             <div class=" sm:py-8 flex flex-row justify-center">
-                <article class="p-8 bg-gray-100 flex flex-col sm:items-center gap-6 shadow">
+                <article class="p-8 bg-gray-100 flex flex-col lg:items-center gap-6 shadow">
                     <p class="font-bold">Travail en équipe</p>
                     <p class="font-bold">Ténacité à résoudre les défis techniques</p>
                     <p class="font-bold">Organisation</p>
@@ -393,7 +390,7 @@ const activeLink = "competences";
                 </h2>
             </header>
             <div class=" sm:py-8 flex flex-row justify-center">
-                <article class="p-8 bg-gray-100 flex flex-col sm:items-center gap-6 shadow">
+                <article class="p-8 bg-gray-100 flex flex-col lg:items-center gap-6 shadow">
                     <p class="font-bold">GIT (Github/Bitbucket)</p>
                     <p class="font-bold">PHP-Storm (chez moi) / Sublime text / Vs Code ( en entreprise)</p>
                     <p class="font-bold">Composer</p>
