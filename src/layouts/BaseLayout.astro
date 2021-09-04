@@ -25,13 +25,13 @@ const { title, description, canonicalUrl, activeLink } = Astro.props as Props;
 
 <body>
 <div class="flex flex-col sm:flex-row">
-    <header class="w-screen sm:w-2/6 lg:w-1/6  bg-main sm:min-h-screen">
+    <header class="w-screen sm:w-2/6 lg:w-1/6  bg-main sm:min-h-screen sm:fixed">
         <Sidebar
                 activeLink={activeLink}
         />
     </header>
 
-    <main class="w-full sm:w-4/6 lg:w-5/6 bg-beige-custom">
+    <main class="w-full sm:ml-72 sm:w-4/6 lg:w-5/6 bg-beige-custom">
         <slot/>
     </main>
 

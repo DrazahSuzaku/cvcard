@@ -7,12 +7,37 @@
     html {
         scroll-behavior:smooth
     }
+
+    p, a, h1, h2, h3, h4, h5, h6 , li{
+        font-family: 'Roboto Slab', serif;
+    }
+
+    p, li {
+        font-weight: 300;
+    }
+
+    a.text-nav-custom {
+        font-weight: 700;
+    }
+
+    a.text-content-custom:hover {
+        color: white;
+    }
+
     .text-main {
-        color: #ff4050;
+        color: #ea5550;
     }
 
     .bg-main {
-        background-color: #ca1625;
+        background-color: #ea5550;
+    }
+
+    .text-main-dark {
+        color: #882536;
+    }
+
+    .bg-main-dark {
+        background-color: #882536;
     }
 
     .text-main-light {
@@ -31,12 +56,12 @@
         background-color: #242d53
     }
 
-    .text-lightblue-custom {
-        color: #242d53;
+    .text-content-custom {
+        color: #7A787F
     }
 
-    .bg-lightblue-custom {
-        background-color: #242d53;
+    .text-title-custom {
+        color: #252533
     }
 
     .bg-beige-custom {
